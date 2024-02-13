@@ -1,0 +1,69 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Extra </title>
+    </head>
+    <body>
+        <h1 class="titulo"> Esta es la sección extra </h1>
+        <a href="./../index.html"> De vuelta al Índice </a>
+        <form>
+            <div>
+                <label for="miNombre"> Nombre: </label>
+                <input placeholder="Nombre" ="text" name="miNombre" id="miNombre">
+            </div>
+            <div>
+                <label for="miContraseña"> Contraseña: </label>
+                <input type="password" name="miContraseña" id="miContraseña">
+            </div>
+            <div>
+                <label for="miFecha"> Fecha de nacimiento: </label>
+                <input type="date" name="miFecha" id="miFecha">
+            </div>
+            <div>
+                <h2> Sexo </h2>
+                <label for="masculino"> Masculino: </label>
+                <input type="radio" id="masculino" name="sexo">
+                <label for="femenino"> Femenino: </label>
+                <input type="radio" id="femenino" name="sexo">
+                <label for="otro"> Otro: </label>
+                <input type="radio" id="otro" name="sexo">
+            </div>
+            <div>
+                <h2> Lenguajes que dominas </h2>
+                <div>
+                  <label for="html"> HTML </label> 
+                  <input type="checkbox" id="html" name="lenguajes"> 
+                </div>
+                <div>
+                    <label for="css"> CSS </label> 
+                    <input type="checkbox" id="css" name="lenguajes"> 
+                  </div>
+                  <div>
+                    <label for="javascript"> JavaScript </label> 
+                    <input type="checkbox" id="javascript" name="lenguajes"> 
+                  </div>
+            </div>
+            <div>
+                <label for="miPais"> País de residencia: </label>
+                <select name="miPais" id="miPais">
+                    <option value="CH"> Chile </option>
+                    <option value="MX"> México </option>
+                    <option value="CA"> Canada </option>
+                </select>
+            </div>
+            <div>
+                <label for="comentario"> Déjanos un comentario:</label>
+                <textarea name="comentario" maxlength="30" id="comentario"></textarea>
+            </div>
+            <div>
+                <button>
+                    Enviar
+                </button>
+                <button>
+                    Cancelar
+                </button>
+            </div>
+        </form>
+    </body>
+</html>
