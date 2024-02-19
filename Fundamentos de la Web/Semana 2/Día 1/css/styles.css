@@ -1,0 +1,36 @@
+div{
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenido-principal{
+    display: flex;
+    flex-direction: row; /* Esto lo toma por defecto */
+}
+
+.menu-izquierdo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.contenido-derecho{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-derecho{
+    height: 150px;
+}
