@@ -1,0 +1,99 @@
+/* Estilos para móviles y pantallas en delante*/
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo-image{
+    width: 30%;
+}
+
+.menu{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    background-color: gray;
+    color: white;
+    padding: 3px;
+}
+
+main{
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+
+.social{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+    padding: 0px;
+}
+
+/* Estilos para tabletas y pantallas en delante */
+@media only screen and (min-width: 600px){
+    header{
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px 0px;
+    }
+
+    main{
+        border-bottom: 1px solid rgb(212, 212, 212);
+    }
+
+    .social{
+        justify-content: space-around;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 990px){
+    header{
+        justify-content: flex-start;
+    }
+
+    .menu{
+        display: flex;
+        list-style: none;
+        gap: 50px;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    main{
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .product{
+        flex: 1;
+    }
+}
