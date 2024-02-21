@@ -27,3 +27,6 @@
 
 # Comando para ver el estatus de nuestro repositorio
 git status
+
+# Comando para clonar un repositorio a nuestra computadora
+git clone url-del-repositorio
