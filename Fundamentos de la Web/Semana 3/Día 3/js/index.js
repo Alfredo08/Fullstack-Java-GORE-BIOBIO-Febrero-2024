@@ -34,7 +34,24 @@ function seleccionarCiudad(elementoSelector){
 
 /* Pasos para agregar una conexion */
 // 1) Darle click a la imagen de la palomita
-// 2) Eliminar ese usuario del listado de "Request conections"
-// 3) Actualizar el contador de "Request conections"
-// 4) Agregar ese usuario a el listado de "Your conections"
-// 5) Actualizar el contador de "Your conections"
+function agregarConexion(elementoImagen){
+    let nombre = elementoImagen.parentElement.previousElementSibling.innerText;
+    let imagen = elementoImagen.parentElement.previousElementSibling.querySelector('img').src;
+    // 2) Eliminar ese usuario del listado de "Request conections"
+    elementoImagen.closest(".card-list-item").remove();
+    // 3) Actualizar el contador de "Request conections"
+    let elementoNumDeConexiones = document.querySelector('#connectionRequestNumber');
+    let num = Number(elementoNumDeConexiones.textContent) - 1;
+    elementoNumDeConexiones.textContent = num;
+    // 4) Agregar el usuario eliminado a nuestra lista de "Your conections"
+    let misConexiones = document.querySelector('#myConnections');
+    // 5) Actualizar el contador de "Your conections"
+    misConexiones.innerHTML += `
+        <li class="card-list-item start">
+            <img src="${imagen}" alt="arry" class="avatar-s">
+            ${nombre}
+        </li>`;
+    let elementoConexionesTotales = document.querySelector('#totalConnections');
+    num = Number(elementoConexionesTotales.innerText) + 1;
+    elementoConexionesTotales.innerText = num;
+}
