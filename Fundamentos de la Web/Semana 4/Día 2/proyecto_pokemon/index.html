@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> API Pokemon </title>
+        <link href="./css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1> API Pokemon </h1>
+        <form onsubmit="buscarPokemon(event)">
+            <div>
+                <label for="pokemon">
+                    ¿Qué pokemon quieres buscar?
+                </label>
+                <input type="text" id="pokemon">
+            </div>
+            <button>
+                Buscar
+            </button>
+        </form>
+        <div class="resultado"></div>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
